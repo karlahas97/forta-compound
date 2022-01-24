@@ -53,7 +53,7 @@ var handleTransaction = function (txEvent) { return __awaiter(void 0, void 0, vo
         if (gasUsed.isGreaterThan("1000000")) {
             findings.push(forta_agent_1.Finding.fromObject({
                 name: "High Gas Used",
-                description: "Gas Used: " + gasUsed,
+                description: "Gas Used: ".concat(gasUsed),
                 alertId: "FORTA-1",
                 severity: forta_agent_1.FindingSeverity.Medium,
                 type: forta_agent_1.FindingType.Suspicious

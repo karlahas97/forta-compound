@@ -78,7 +78,7 @@ describe("high gas agent", function () {
                         expect(findings).toStrictEqual([
                             forta_agent_1.Finding.fromObject({
                                 name: "High Gas Used",
-                                description: "Gas Used: " + txEvent.gasUsed,
+                                description: "Gas Used: ".concat(txEvent.gasUsed),
                                 alertId: "FORTA-1",
                                 type: forta_agent_1.FindingType.Suspicious,
                                 severity: forta_agent_1.FindingSeverity.Medium
